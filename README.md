@@ -1,15 +1,11 @@
 # location_based_geodjango_app
 https://realpython.com/location-based-app-with-geodjango-tutorial
 
-Have not successfully completed any of the below. First need to update Xcode.
 
-## If using a Mac
-1. Instead of `sudo aptitude install gdal-bin libgdal-dev`, use `brew install gdal`. Test version using `ogr2ogr --version`.
-2. Instead of `sudo aptitude install python3-gdal`, use `pip3 install gdal`
-3. Instead of `sudo aptitude install binutils libproj-dev`, use `brew install proj`.
 
-OR
-? https://docs.djangoproject.com/en/2.1/ref/contrib/gis/install/#homebrew. Try this first? 
-
-# install docker
-https://docs.docker.com/docker-for-mac/install/
+## If using a Mac, use the following to install GEOS, GDAL, and PROJ.4 and DOCKER
+1. Make sure your XCode is updated
+2. Make sure you have Homebrew installed; if not, https://brew.sh/
+3. Uninstall python using `brew uninstall --ignore-dependencies python`; the following will not successfully install postgis/gdal if you do not uninstall (if anyone finds a workaround for this, let me know!)
+4. Go to https://docs.djangoproject.com/en/2.1/ref/contrib/gis/install/#homebrew and install
+5. Install docker https://docs.docker.com/docker-for-mac/install/
