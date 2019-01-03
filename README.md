@@ -9,3 +9,7 @@ https://realpython.com/location-based-app-with-geodjango-tutorial
 3. Uninstall python using `brew uninstall --ignore-dependencies python`; the following will not successfully install postgis/gdal if you do not uninstall (if anyone finds a workaround for this, let me know!)
 4. Go to https://docs.djangoproject.com/en/2.1/ref/contrib/gis/install/#homebrew and install
 5. Install docker https://docs.docker.com/docker-for-mac/install/
+
+##Useful migration commands
+`/manage.py showmigrations`
+`./manage.py migrate app zero`, where `app` can be `admin`, `shops`, etc.
